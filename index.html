@@ -1,0 +1,610 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- === SS FILE === -->
+    <link rel="stylesheet" href="style.css">
+    <title>Restu Zuhur</title>
+
+</head>
+<body onload="initClock">
+
+
+ 
+
+  
+
+
+
+    <!-- Header Start -->
+    <header>
+        <!-- Profile -->
+        <div class="Profile">
+            <img src="img/Gambar WhatsApp 2024-01-04 pukul 14.35.58_501de321.jpg" alt="" >
+            <h1>Restu Zuhur</h1>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+
+
+
+    
+
+        <!-- Navbar -->
+        <nav>
+            <ul>
+                <li><a href="#home" class="active"><i class="fa-solid fa-house"></i>Home</a></li>
+                <li><a href="#about" class="active"><i class="fa-solid fa-user"></i>About Me</a></li>
+                <li><a href="#portofolio" class="active"><i class="fa-solid fa-briefcase"></i>Portofolio</a></li>
+                <li><a href="#service" class="active"><i class="fa-solid fa-server"></i>Service</a></li>
+                <li><a href="#contact" class="active"><i class="fa-solid fa-envelope"></i>Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>&copy; Copyright 2024 <br>Designed By <a href="https://restu.xyz" target="_blank">Restu.Zuhur</a></p>
+
+        </div>
+
+
+    </header>
+
+    <!-- Mobile Nav Toggle -->
+    <i class="fa-solid fa-bars" id="MenuBtn"></i>
+    <!-- Header End-->
+
+
+
+    <!-- All Body Content-->
+    <main>
+        <!-- Home Section Start -->
+        <section id="home">
+            <div class="home-row">
+                <h1>Hi Welcome <br>To My Project</h1>
+                <p>I'am a <span class="auto-input"></span></p>
+            </div>
+
+
+<div class="datetime">
+
+  <div id="clock"></div>
+  <div id="date"></div>
+  <script>
+    function updateClock() {
+      var now = new Date();
+      var hours = now.getHours();
+      var minutes = now.getMinutes();
+      var seconds = now.getSeconds();
+      var day = now.getDate();
+      var month = now.getMonth() + 1; // Note: Month is zero-based
+      var year = now.getFullYear();
+  
+      hours = hours % 12 || 12; // Convert to 12-hour format
+      var period = hours < 12 ? "AM" : "PM";
+  
+      var timeString = hours + ":" + pad(minutes) + ":" + pad(seconds) + " " + period;
+      var dateString = day + "/" + month + "/" + year;
+  
+      document.getElementById("clock").innerHTML = timeString;
+      document.getElementById("date").innerHTML = dateString;
+    }
+  
+    function pad(number) {
+      return (number < 10 ? '0' : '') + number;
+    }
+  
+    function initClock() {
+      updateClock();
+      setInterval(updateClock, 1000);
+    }
+  
+    // Initialize the clock when the page loads
+    window.onload = initClock;
+  </script>
+</div>
+
+
+
+
+
+  
+        </section>
+        <!--Home Section End -->
+
+        <!-- About Section -->
+
+        <section id="about">
+
+            <h1 class="sub-heading">About Me</h1>
+            <div class="divider"></div>
+            <p class="sub-para">Ketika benar saja salah apalagi pas salah</p>
+
+
+            <div class="about-col">
+
+                <!-- img col -->
+                <div class="img-col">
+                    <img src="img/s3.jpg" alt="...">
+
+                </div>
+
+                <!-- Information -->
+                <div class="info-col">
+                    <h2>ٱلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ ٱللَّٰهِ وَبَرَكَاتُهُ</h2>
+                    <p class="sub-para">Aku bangga menjadi Santri.</p>
+                    <div class="icon-list-col">
+                        <!-- Left Side List -->
+                        <div class="icon-list">
+                            <ul>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Nama:</strong> <span>Restu Zuhur</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Tanggal Lahir:</strong> <span>17 November 2004</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Asal</strong> <span>Kendal, Jawa Tengah</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Status:</strong> <span>Santri/Mahasiswa</span></li>
+                            </ul>
+                        </div>
+
+                        <!-- Right Side list -->
+                        <div class="icon-list">
+                            <ul>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Umur:</strong> <span>19 tahun</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Agama:</strong> <span>Islam</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>HP:</strong> <span>081228884132</span></li>
+                                <li><i class="fa-solid fa-angle-right"></i> <strong>Email:</strong> <span>skyrestu9@gmail.com</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!-- Home Section End -->
+    
+
+    <!-- Facts Section Start-->
+    <section id="fact">
+
+        <h1 class="sub-heading">Urip iku Urup</h1>
+        <div class="divider"></div>
+        <p class="sub-para">Manut Kersane Pengeran Mawon</p>
+
+        <div class="fact-row">
+
+            <!-- Fact Box -1 -->
+            <div class="fact-box">
+                <i class="fa-solid fa-medal"></i>
+                <strong>~</strong>
+                <p>Pagar Nusa</p>
+            </div>
+            
+            <!-- Fact Box -2 -->
+            <div class="fact-box">
+                <i class="fa-regular fa-star"></i>
+                <strong>~</strong>
+                <p>IMAN</p>
+            </div>
+            
+            <!-- Fact Box -3 -->
+            <div class="fact-box">
+                <i class="fa-regular fa-user"></i>
+                <strong>~</strong>
+                <p>ISLAM</p>
+            </div>
+            
+            <!-- Fact Box -4 -->
+            <div class="fact-box">
+                <i class="fa-regular fa-thumbs-up"></i>
+                <strong>~</strong>
+                <p>IKHSAN</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Facts Section End-->
+
+    <!-- Skill section Start -->
+    <section id="skill">
+        <h1 class="sub-heading">Skills</h1>
+        <div class="divider"></div>
+        <p class="sub-para">Yang saya kuasai</p>
+
+        <div class="skill-row">
+            <!-- Skill -1 -->
+            <div class="skill-box">
+                <div class="skill-info">
+                    <h2>HTML</h2>
+                    <h2>85%</h2>
+                </div>
+                <div class="skill-outter-line">
+                    <div class="skill-inner-line" style="width: 85%;"></div>
+                </div>
+            </div>
+            <!-- Skill -2 -->
+            <div class="skill-box">
+                <div class="skill-info">
+                    <h2>CSS</h2>
+                    <h2>80%</h2>
+                </div>
+                <div class="skill-outter-line">
+                    <div class="skill-inner-line" style="width: 80%;"></div>
+                </div>
+            </div>
+            <!-- Skill -3 -->
+            <div class="skill-box">
+                <div class="skill-info">
+                    <h2>JavaScript</h2>
+                    <h2>70%</h2>
+                </div>
+                <div class="skill-outter-line">
+                    <div class="skill-inner-line" style="width: 70%;"></div>
+                </div>
+            </div>
+            <!-- Skill -4 -->
+            <div class="skill-box">
+                <div class="skill-info">
+                    <h2>Web Design</h2>
+                    <h2>85%</h2>
+                </div>
+                <div class="skill-outter-line">
+                    <div class="skill-inner-line" style="width: 85%;"></div>
+                </div>
+            </div>
+            <!-- Skill -5 -->
+            <div class="skill-box">
+                <div class="skill-info">
+                    <h2>WordPress</h2>
+                    <h2>75%</h2>
+                </div>
+                <div class="skill-outter-line">
+                    <div class="skill-inner-line" style="width: 75%;"></div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Skill section End -->
+
+
+    <!-- Resume Section Start -->
+    <section id="resume">
+        <h1 class="sub-heading">Resume</h1>
+        <div class="divider"></div>
+        <p class="sub-para">Manut Kersane Pengeran</p>
+
+        <div class="resume-row">
+            <!-- Left Col -->
+            <div class="resume-cols">
+                <h2>Ngga Tau Mau Di isi apa</h2>
+                <div class="my-info">
+                    <h3>Restu Zuhur</h3>
+                    <span class="sp-box">Karepmu</span>
+                    <p>Rak Roh</p>
+                    <ul>
+                        <li>Hmmmmmmmmm</li>
+                        <li>Hmmmmmmmmmm</li>
+                        <li>Hmmmmmmmmm</li>
+                    </ul>
+                </div>
+
+                <h2>Education</h2>
+                <div class="my-edu">
+                    <h3>Pemula</h3>
+                    <span class="sp-box">Huft</span>
+                    <p>Kiw Kiw</p>
+                    <li>Parah men</li>
+                    <li>Halo dek</li>
+                    <li>Oskadon</li>
+
+                </div>
+
+
+            </div>
+
+            <!-- Right Col -->
+            <div class="resume-cols">
+
+                <h2>Ajrain Dong Puh Sepuh</h2>
+                <div class="pro-exp">
+                    <h3>Hmmmmm</h3>
+                    <span class="sp-box">Terserah</span>
+                    <p>Hmmmmm</p>
+                    <ul>
+                        <li>Mumet</li>
+                        <li>Mumet</li>
+                        <li>Mumet</li>
+                    </ul>
+                </div>
+
+                <div class="pro-exp">
+                    <h3>P Mumet</h3>
+                    <span class="sp-box">Halooo</span>
+                    <p>Ongkekan</p>
+                    <ul>
+                        <li>Terserah</li>
+                        <li>Terserah</li>
+                        <li>Terserah</li>
+                    </ul>
+                </div>
+                  
+            </div>
+
+        </div>
+
+    </section>
+ 
+
+
+    <!-- Resume Section End -->
+    <!------------------------------------->
+
+
+    <!-- Portofolio Section Start-->
+
+    <section id="portofolio">
+       
+        <h1 class="sub-heading">Portofolio</h1>
+        <div class="divider"></div>
+        <p>Pernah Bekerja Di</p>
+
+        <div class="port-row">
+            <!-- Portofolio Item -1 -->
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/111.jpg" alt="...">
+                </div>
+                <div class="port-info">
+                    <h4>Seblak Shelter</h4>
+                    <p>Posisi Sebagai 
+                        <li>Waiter</li>
+                        <li>Kasir</li>
+                        <li>Kitchen Chef</li>
+                        <li>Leader</li>
+                    </p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- Portofolio Item -2 -->
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/mini.jpg" alt="...">
+                </div>
+                <div class="port-info">
+                    <h4>Pom Mini</h4>
+                    <p>Melayani Konsumen BBM</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- Portofolio Item -3 -->
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/bangunan.jpeg" alt="...">
+                </div>
+                <div class="port-info">
+                    <h4>Toko Bangunan Sam Sajang</h4>
+                    <p>Posisi sebagai karyawan gudang</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- Portofolio Item -4 -->
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/batu.jpg" alt="..">
+                </div>
+                <div class="port-info">
+                    <h4>Penambang Batu</h4>
+                    <p>Mengumpulkan batu, lalu disetorkan ke pabrik pembuatan batu kerikil</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- Portofolio Item -5 -->
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/sunnn.jpeg" alt="..">
+                </div>
+                <div class="port-info">
+                    <h4>بِسْمِ اللَّهِ الرحمن الرَّحِيمِ</h4>
+                    <p>Manut Kersane Pengeran</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+            <!-- Portofolio Item -6 -->
+            <div class="port-item">
+                <div class="port-img">
+                    <img src="img/sunnn.jpeg" alt="..">
+                </div>
+                <div class="port-info">
+                    <h4>بِسْمِ اللَّهِ الرحمن الرَّحِيمِ</h4>
+                    <p>لاَ إِلَهَ إِلاَّ اللهُ</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    
+    <!-- Portofolio Section End-->
+
+    <!--------------------->
+
+    <!-- Services Section Start -->
+
+    <section id="service">
+        <h1 class="sub-heading">Service</h1>
+        <div class="divider"></div>
+        <p class="sub-para">Monggo Mas/Mbak Menawi Purun</p>
+
+        <div class="service-row">
+
+            <!-- Service -1 -->
+            <div class="service-box">
+                <div class="icon">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div class="ser-info">
+                    <h4>Joki Tugas</h4>
+                    <p>Solusi Semua Tugas Anda</p>
+
+                </div>
+            </div>
+
+            <!-- Service -2 -->
+            <div class="service-box">
+                <div class="icon">
+                    <i class="fa-solid fa-diamond"></i>
+                </div>
+                <div class="ser-info">
+                    <h4>Top Up All Game</h4>
+                    <p>Murah dan Cepat <br>Sejak 2019</p>
+            
+                </div>
+             </div>
+
+            <!-- Service -3 -->
+            <div class="service-box">
+                <div class="icon">
+                    <i class="fa-solid fa-play"></i>
+                </div>
+                <div class="ser-info">
+                    <h4>Joki Game </h4>
+                    <p>Tersedia untuk
+                        <li>Mobile Legend</li>
+                        <li>Free Fire</li>
+                        <li>PUBG Mobile</li>
+                    </p>
+                </div>
+            </div>
+            <!-- Service -4 -->
+            <div class="service-box">
+                <div class="icon">
+                    <i class="fa-solid fa-binoculars"></i>
+                </div>
+                <div class="ser-info">
+                    <h4>Service Bangunan/Kelistrikan</h4>
+                    <p>Solusi tepat untuk problem Istana Anda</p>
+                </div>
+             </div>
+             <!-- Service -5 -->
+            <div class="service-box">
+                <div class="icon">
+                    <i class="fa-solid fa-motorcycle"></i>
+                </div>
+                <div class="ser-info">
+                    <h4>Tambah langkah motor</h4>
+                    <p>Bor-Up dulu baru ongkekan</p>
+                </div>
+            </div>
+             <!-- Service -6 -->
+             <div class="service-box">
+                 <div class="icon">
+                      <i class="fa-brands fa-slack"></i>
+                 </div>
+                 <div class="ser-info">
+                      <h4>Jasa Duel</h4>
+                      <p>Ready bantai-bantai</p>
+                 </div>
+            </div>
+       
+        </div>
+
+    </section>
+    <!-- Service Section End-->
+
+    <!-- Contact Section Start -->
+    <section id="contact">
+
+        <h1 class="sub-heading">Contact</h1>
+        <div class="divider"></div>
+        <p>Nek utang penting dibayar</p>
+
+        <div class="contact-row">
+
+            <!-- Left Col -->
+            <div class="contact-left">
+
+                <!-- Email Box -->
+                <div class="icon-box">
+                    <div class="icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="info">
+                        <h4>Email:</h4>
+                        <p>skyrestu9@gmail.com</p>
+                    </div>
+                </div>
+                <!-- Call Box -->
+                <div class="icon-box">
+                     <div class="icon">
+                          <i class="fa-solid fa-phone"></i>
+                     </div>
+                     <div class="info">
+                          <h4>Call:</h4>
+                          <p>0812 2888 4132</p>
+                     </div>
+                </div>
+                <!-- Location Box -->
+                <div class="icon-box">
+                     <div class="icon">
+                          <i class="fa-solid fa-location-dot"></i>
+                     </div>
+                     <div class="info">
+                          <h4>Lokasi:</h4>
+                          <p>Singorojo, Kendal, Jawa Tengah</p>
+                     </div>
+                </div>
+
+                <!-- Map -->
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126692.87852993004!2d110.20924445!3d-7.10832455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70645ec5565e55%3A0x4027a76e3530610!2sKec.%20Singorojo%2C%20Kabupaten%20Kendal%2C%20Jawa%20Tengah!5e0!3m2!1sid!2sid!4v1704653313320!5m2!1sid!2sid" width="100%" height="250" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+
+            <!-- Right Col-->
+            <div class="contact-right">
+
+                <form action="">
+
+                    <input type="text" name="name" id="name" placeholder="Your Name">
+                    <input type="email" name="email" id="email" placeholder="Your Email">
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                    <textarea name="msg" id="msg" rows="9" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message">
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- Contact Section End -->
+
+
+
+    </main>
+
+
+    <!-- Typed.JS File (for typing effect)-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- JS File -->
+    <script src="script.js"></script>
+    <!-- Font Awesome JS File -->
+    <script src="https://kit.fontawesome.com/aa5f332820.js" crossorigin="anonymous"></script>
+
+
+    
+</body>
+</html>
